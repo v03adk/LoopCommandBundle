@@ -3,7 +3,7 @@
   "description": "Symfony2 bundle for loop commands execution",
   "version": "1.0.0",
   "type": "symfony-bundle",
-  "homepage": "https://github.com/v0adk/LoopCommandBundle",
+  "homepage": "https://github.com/v03adk/LoopCommandBundle",
   "license": "MIT",
   "keywords": [
     "symfony2",
