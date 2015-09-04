@@ -20,7 +20,7 @@ class CheckLoopRunning
         $kernelRootDir = $this->kernel->getRootDir();
         $this->logPath = $kernelRootDir . '/logs/async_log.log';
         $this->pidFile = $kernelRootDir . '/logs/async.pid';
-        $this->scriptPath = $kernelRootDir . '/../vendor/KzDali/Bundle/LoopCommandBundle/Command/_async_exec.php';
+        $this->scriptPath = $kernelRootDir . '/../vendor/kzdali/loopcommandbundle/Command/_async_exec.php';
     }
 
     public function onKernelController(FilterControllerEvent $event)
