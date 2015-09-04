@@ -22,7 +22,7 @@ public function registerBundles()
 }
 ```
 
-### Configuration example
+### Configuration example and Usage
 
 You should configure commands to loop in config.yml
 
@@ -30,6 +30,23 @@ You should configure commands to loop in config.yml
 loop_commands:
     commands: [cache:clear, doctrine:migrations:generate]                      # comma separated commands
 ```
+
+Loop process starts automatically by CheckLoopRunning event listener. When contoller is called, if it implements
+LoopCommandInterface loop process starts.
+
+```php
+// src/AppBundle/Controller/SomeConteroller.php
+
+use KzDali\LoopCommandBundle\Controller\LoopCommandInterface;
+
+// ...
+
+class SomeController extends Controller implements LoopCommandInterface
+{
+    // ...
+}
+```
+
 
 To kill loop process
 
