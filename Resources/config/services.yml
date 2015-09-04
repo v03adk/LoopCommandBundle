@@ -1,0 +1,6 @@
+services:
+    otg.check_worker_listener:
+        class: KzDali\LoopCommandBundle\EventListener\CheckLoopRunning
+        arguments: [@kernel]
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
